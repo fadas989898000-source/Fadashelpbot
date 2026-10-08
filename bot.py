@@ -67,4 +67,6 @@ async def admin_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
 telegram_app.add_handler(
     MessageHandler(
         filters.ALL & ~filters.COMMAND,
-        user
+                user_message
+            )
+)
